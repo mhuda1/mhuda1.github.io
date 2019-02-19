@@ -1,61 +1,133 @@
-html {
-    padding: 0;
-    margin: 0;
-}
-
 body{
-    font-family: 'Karla', sans-serif;
-    padding: 16px 48px;
-}
-
-.container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.leftcontainer {
-    align-items: flex-start;
-    justify-content: flex-start;   
-}
-
-.rightcontainer {
- align-items: flex-end;   
- justify-content: flex-end;
-}
-
-
-h1 {
-    font-size: 72px;
-}
-
-h2 {
-    font-size: 48px;
-    color: grey;
-    font-style: italic;
     margin: 0;
-    font-weight: 300;
+    padding: 0;
+    background: url(bg1.JPG) no-repeat;
+    background-size: cover;
+}
+.kotak{
+    width: 450px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Karla', sans-serif;
 
 }
-
-.photo {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+.kotak-profile{
     border-radius: 50%;
-    margin: 16px;
+    width: 200px;
+    height: 200px;
+}
+.kotak h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.kotak h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.kotak p{
+    text-align: justify;
+}
+ul{
+    margin: 0;
+    padding: 0;
+
+}
+.kotak li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+.kotak li a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+}
+.kotak li a:hover{
+    color: #b9b9b9;
 }
 
-.sm-photo {
-    width: 100px;
-    height: 100px;
-    margin-right: 32px;
+.navbar{
+    position: fixed;
+    height: 50px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+
 }
+.logo{
+    background: url(logo-bem.png) no-repeat 50%;
+    background-size: contain;
+    width: 180px;
+    height: 50px;
+    float: left;
+    margin-left: 0;
+}
+.menu{
+    position: absolute;
+    right: 20px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+.menu a:hover{
+    color: #b9b9b9;
+}
+.btn{
+    display: none;
+    position: absolute;
+    right: 20px;
 
+}
+.btn:hover > span{
+    background: #b9b9b9;
+}
+.btn span{
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: white;
+  }
 
-.sm-photo-right {
-    margin-right: 0;
-    margin-left: 32px;
-    border-radius: 50%;
+@media only screen and (max-width : 600px){
+    .navbar{
+        overflow: visible;
+    }
+    .menu{
+        width: 100%;
+        right: 0;
+        top: 50px;
+        background: rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn{
+        display: block;
+        cursor: pointer;
+    }
+    .show{
+        max-height: 500px;
+    }
 }
