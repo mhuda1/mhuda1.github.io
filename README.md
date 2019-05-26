@@ -1,3 +1,19 @@
-# mhuda1.github.io
+# Portofolio Website
 
-A small portofolio web project that i did to make a front-end website
+
+My personal portofolio website Hosted [Here](mhuda1.github.io)
+
+## Getting the Source code
+
+### Cloning 
+Create a new directory ```/dir/urdirectory/```
+
+```
+cd /dir/urdirectory
+git clone https://github.com/mhuda1/mhuda1.github.io.git
+
+```
+
+### Donwloading the zip file
+
+you can download the zip file [Here](https://github.com/mhuda1/mhuda1.github.io/archive/master.zip)
