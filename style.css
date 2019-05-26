@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(bg1.JPG) no-repeat;
+    background: url(image/bg1.JPG) no-repeat;
     background-size: cover;
 }
 .kotak{
@@ -64,14 +64,6 @@ ul{
     background: rgba(0, 0, 0, 0.3);
     width: 100%;
 
-}
-.logo{
-    background: url(logo-bem.png) no-repeat 50%;
-    background-size: contain;
-    width: 180px;
-    height: 50px;
-    float: left;
-    margin-left: 0;
 }
 .menu{
     position: absolute;
